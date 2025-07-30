@@ -1,4 +1,7 @@
 public class Question7_RotateLinkedList {
+    /** rotate a list by moving each element in the list n times to
+      * the right.
+    */
 
     // Singly-linked list node
     public static class ListNode {
@@ -11,7 +14,7 @@ public class Question7_RotateLinkedList {
     }
 
     /**
-     * Rotates the linked list to the right positionally by steps.
+     * Here, we rotate the linked list to the right positionally by steps.
      */
     public static ListNode rotateRight(ListNode head, int positions) {
         if (head == null || positions == 0) return head;
@@ -53,7 +56,7 @@ public class Question7_RotateLinkedList {
         return head;
     }
 
-    // Converts linked list to readable format
+    // Here we convert linked list to readable format
     public static String toString(ListNode head) {
         StringBuilder sb = new StringBuilder();
         while (head != null) {
@@ -70,10 +73,5 @@ public class Question7_RotateLinkedList {
             "ID_A01", "ID_A02", "ID_A03", "ID_A04", "ID_A05", "ID_A06"
         }), 2)));
 
-        // Rotate by 3 on 3 elements
-        System.out.println(toString(rotateRight(fromArray(new String[]{"X", "Y", "Z"}), 3)));
-
-        // Rotate by 1 on 1 element (should remain same)
-        System.out.println(toString(rotateRight(fromArray(new String[]{"ONE"}), 1)));
     }
 }
