@@ -3,9 +3,8 @@ import java.util.*;
 public class Question3_CanMakeAllZero {
 
     /**
-     * Returns 1 if all elements except the first can be made zero
-     * by repeatedly applying: a[i] = a[i] - a[i-1], for i >= 1.
-     * Otherwise returns 0.
+     *  make an array all zero (except the first element) by repeatedly doing the following decrement
+     *  operation zero or more times
      */
     public static int canMakeArrayAllZero(int[] input) {
         if (input.length <= 1) 
@@ -16,7 +15,8 @@ public class Question3_CanMakeAllZero {
 
         for (int i = 0; i < maxTries; i++) {
             if (allExceptFirstAreZero(numbers)) return 1;
-            if (!applyStep(numbers)) break;
+            if (!applyStep(numbers)) 
+            break;
         }
 
         return allExceptFirstAreZero(numbers) ? 1 : 0;
@@ -25,7 +25,8 @@ public class Question3_CanMakeAllZero {
     // Checks if all elements after index 0 are zero
     private static boolean allExceptFirstAreZero(int[] numbers) {
         for (int i = 1; i < numbers.length; i++) {
-            if (numbers[i] != 0) return false;
+            if (numbers[i] != 0) return 
+            false;
         }
         return true;
     }

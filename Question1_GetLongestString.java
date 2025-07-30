@@ -4,8 +4,7 @@ public class Question1_GetLongestString {
 
     /**
      * Returns the longest string from the array that:
-     * - Contains only allowed characters.
-     * - Has no repeated identical adjacent characters.
+     * - Contains only allowed characters && doesn't repeat character side by sude.
      */
     public static String getLongestString(List<String> chars, String[] arr) {
 
