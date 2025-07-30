@@ -22,7 +22,7 @@ public class Question1_GetLongestString {
         return longest;
     }
 
-    // Checks if the string contains only allowed characters and no adjacent repeats
+    // Checks if the string contains only allowed characters and no repeats
     private static boolean isValid(String s, Set<String> allowed) {
         for (int i = 0; i < s.length(); i++) {
             String ch = String.valueOf(s.charAt(i));

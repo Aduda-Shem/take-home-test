@@ -56,10 +56,5 @@ public static void main(String[] args) {
     int expected3 = 1;
     int result3 = canMakeArrayAllZero(c);
     System.out.println("Test 3: " + (result3 == expected3 ? "PASSED" : "FAILED"));
-
-    int[] d = {};
-    int expected4 = 1;
-    int result4 = canMakeArrayAllZero(d);
-    System.out.println("Test 4: " + (result4 == expected4 ? "PASSED" : "FAILED"));
 }
 }

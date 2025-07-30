@@ -11,7 +11,7 @@ public class Question7_RotateLinkedList {
     }
 
     /**
-     * Rotates the linked list to the right by `positions` steps.
+     * Rotates the linked list to the right positionally by steps.
      */
     public static ListNode rotateRight(ListNode head, int positions) {
         if (head == null || positions == 0) return head;

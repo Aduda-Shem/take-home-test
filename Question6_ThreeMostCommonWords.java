@@ -7,7 +7,7 @@ public class Question6_ThreeMostCommonWords {
         // Here we convert to lowercase
         String[] words = sentence.toLowerCase().split("\\s+");
 
-        // Count occurrences of each word by using O(1) time complexity
+        // Count occurrences of each word by using time complexity
         Map<String, Integer> freq = new HashMap<>();
         for (String word : words) {
             freq.put(word, freq.getOrDefault(word, 0) + 1);

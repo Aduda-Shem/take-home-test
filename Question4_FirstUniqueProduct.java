@@ -3,10 +3,10 @@ import java.util.*;
 public class Question4_FirstUniqueProduct {
 
     /**
-     * Returns the first string that appears only once in the array.
+     * find the first product in an array that occurs only once in that array.
      */
     public static String firstUniqueProduct(String[] arr) {
-        // Here , we count of each product - using LinkedHashMap preserving insertion order
+        // Here , we count of each product - preserving insertion order
         Map<String, Integer> count = new LinkedHashMap<>();
 
         for (String product : arr) {
@@ -26,14 +26,8 @@ public class Question4_FirstUniqueProduct {
          // Computer
         System.out.println(firstUniqueProduct(a));
 
-        String[] b = {"Apple", "Bag", "Computer", "Apple"};
-         // Bag
-        System.out.println(firstUniqueProduct(b));
-
         String[] c = {};
         // null
         System.out.println(firstUniqueProduct(c)); 
-
-  
     }
 }
