@@ -3,7 +3,7 @@ import java.util.*;
 public class Question3_CanMakeAllZero {
 
     /**
-     *  make an array all zero (except the first element) by repeatedly doing the following decrement
+     *  make an array all zero except the first element by repeatedly doing the following decrement
      *  operation zero or more times
      */
     public static int canMakeArrayAllZero(int[] input) {
