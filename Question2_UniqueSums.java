@@ -3,8 +3,7 @@ import java.util.*;
 public class Question2_UniqueSums {
 
     /**
-     * Returns the number of unique combinations that sum to the target.
-     * Each number in the array can be used at most once.
+     * check how many unique ways the array's numbers can be added to match the result.
      */
     public static int countUniqueSumWays(int target, int[] numbers) {
         List<List<Integer>> results = new ArrayList<>();
